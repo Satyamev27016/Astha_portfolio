@@ -26,7 +26,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
+        let response = await fetch("https://astha-portfolio-server.onrender.com/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
