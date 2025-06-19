@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://astha-portfolio-xi.vercel.app/", 
+  origin: "https://astha-portfolio-xi.vercel.app", 
   methods: ["POST", "GET"],
   credentials: true
 }));
